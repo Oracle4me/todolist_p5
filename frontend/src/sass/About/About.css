@@ -1,0 +1,82 @@
+.wrapper-about {
+  position: relative;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background: url("../../img/line-pattern.png") no-repeat right;
+  padding: 40px 0 120px;
+  background-color: #cc0000;
+}
+.wrapper-about .about-container {
+  padding: 70px 130px 100px;
+  position: relative;
+  max-width: 1016px;
+  width: 100%;
+  margin: auto;
+  background: url("../../img/box-chat/base_onair.png") no-repeat center center;
+  background-size: 100% 100%;
+  text-align: center;
+}
+.wrapper-about .about-container .about-title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 40px;
+}
+.wrapper-about .about-container .about-description {
+  font-family: "Roboto";
+  margin-top: 20px;
+  font-size: 19px;
+  line-height: 1.2;
+  color: white;
+  font-display: normal;
+  text-align: justify;
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper-about {
+    padding: 50px 0 70%;
+    height: 100%;
+    background: url("../../img/line-pattern.png") no-repeat center left;
+    justify-content: center;
+    background-color: #cc0000;
+  }
+  .wrapper-about .about-container {
+    padding: 11% 5% 12%;
+    background: #000;
+  }
+  .wrapper-about .about-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-bottom: 6%;
+    width: 100%;
+    transform: translateY(-99%);
+    background: url("../../img/box-chat/base01_top.png") center no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+  }
+  .wrapper-about .about-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 7%;
+    width: 100%;
+    transform: translateY(99%);
+    background: url("../../img/box-chat/base01_btm.png") center no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+  }
+  .wrapper-about .about-container .about-title {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  .wrapper-about .about-container .about-description {
+    font-size: 16px;
+    text-align: justify;
+  }
+}/*# sourceMappingURL=About.css.map */

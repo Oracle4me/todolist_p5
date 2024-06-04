@@ -1,0 +1,500 @@
+.bg_list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 45px;
+}
+
+.box-todo-list {
+  position: relative;
+  width: 300px;
+  height: 320px;
+}
+.box-todo-list .phone-svg,
+.box-todo-list .screen-border-svg1,
+.box-todo-list .screen-border-svg2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.box-todo-list .phone-svg {
+  fill: white;
+}
+.box-todo-list .screen-border-svg2 {
+  fill: #cc0000;
+}
+.box-todo-list .phone-img {
+  position: absolute;
+  width: 16.6rem;
+  left: 17px;
+  top: 44px;
+}
+.box-todo-list .take-img {
+  position: absolute;
+  bottom: 15px;
+}
+
+.box-img-list {
+  display: none;
+}
+
+.title-list {
+  margin-left: 40px;
+}
+
+.todolist {
+  display: inline-block;
+  transform: rotate(0deg);
+  justify-content: center;
+  align-items: center;
+}
+.todolist .lettering-under {
+  position: absolute;
+  display: inline;
+  left: 138px;
+  top: -15px;
+  font-size: 3em;
+  letter-spacing: -4px;
+  font-weight: bold;
+  overflow: visible;
+  height: 32px;
+  line-height: 0.6em;
+  border-radius: 17%;
+  background-color: black;
+}
+.todolist .lettering {
+  position: absolute;
+  left: 140px;
+  top: -25px;
+  color: white;
+  font-size: 2.2em;
+  letter-spacing: 2.5px;
+}
+.todolist .lettering .color {
+  color: #aa1f24;
+}
+
+.zig-shadow {
+  position: absolute;
+  top: 115px;
+  height: 900px;
+  fill: #7f171b;
+}
+
+.zig {
+  position: absolute;
+  bottom: 150px;
+  right: 50px;
+  height: 300px;
+  z-index: 99;
+  fill: aqua;
+}
+
+.todo {
+  position: relative;
+  height: 320px;
+}
+.todo .profil {
+  position: relative;
+  display: block;
+  height: 55px;
+}
+.todo .profil .borders-shadow {
+  position: absolute;
+  top: 115px;
+  left: 31px;
+  fill: #7f171b;
+  border: rgba(0, 0, 0, 0.75);
+}
+.todo .profil .borders {
+  position: absolute;
+  top: 107px;
+  left: 36px;
+  fill: black;
+}
+.todo .profil .outlines {
+  position: absolute;
+  top: 115px;
+  left: 38px;
+  fill: white;
+}
+.todo .profil .text-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 0 0;
+}
+.todo .profil .text-container .text-box {
+  width: 100%;
+  height: 180px;
+}
+.todo .profil .text-container .conf_cmd {
+  position: absolute;
+  right: 80px;
+  top: 35px;
+  width: 60px;
+}
+.todo .profil .text-container .text-input1 {
+  font-family: "Persona5";
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: absolute;
+  width: 22%;
+  top: 70px;
+  left: 70px;
+  transform: rotate(-15deg) skew(23deg);
+  outline: none;
+}
+.todo .profil .text-container .text-input1::-moz-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  letter-spacing: 1.5px;
+}
+.todo .profil .text-container .text-input1::placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  letter-spacing: 1.5px;
+}
+.todo .profil .text-container .text-input2 {
+  font-family: "Persona5";
+  position: absolute;
+  width: 63%;
+  bottom: 50px;
+  padding-bottom: 10px;
+  left: 115px;
+  outline: none;
+  resize: none;
+  scrollbar-width: none;
+  background: transparent;
+  line-height: 1;
+  font-size: 20px;
+  color: white;
+  z-index: 9;
+}
+.todo .profil .text-container .text-input2::-moz-placeholder {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+.todo .profil .text-container .text-input2::placeholder {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+.todo .profil .text-container .wrap-btn {
+  position: relative;
+  display: flex;
+  background-color: #000;
+  justify-content: flex-end;
+}
+.todo .profil .text-container .wrap-btn .submit {
+  position: absolute;
+  right: 45px;
+  bottom: 55px;
+  transform: rotate(-33deg);
+  color: #000;
+  font-size: 19px;
+  padding: -1px 3px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.todo .profil .text-container .wrap-btn .submit:hover {
+  transition: all 0.3s ease;
+  color: #cc0000;
+  text-shadow: 1px 1px 1px #000;
+}
+.todo .profil .text-container .wrap-btn .knfu-img {
+  opacity: 0;
+  position: absolute;
+  right: 26px;
+  top: -135px;
+  transition: all 0.2s ease;
+  transform: translateY(-20px) translateX(20px) rotate(180deg);
+}
+.todo .profil .text-container .wrap-btn:hover .knfu-img {
+  transform: translateY(0) translateX(0) rotate(0);
+  opacity: 1;
+}
+.todo .profil .img-imagine {
+  position: absolute;
+  top: 77px;
+  left: 54px;
+  padding: 10px;
+  display: flex;
+}
+
+/* Add this to your CSS file */
+.show-alert {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.unshow-alert {
+  opacity: 0;
+}
+
+.todo-footer-title {
+  position: relative;
+  display: flex;
+  margin: 50px auto 50px;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.todo-footer-title .show-todo-title {
+  padding: 1% 0 1%;
+}
+.todo-footer-title .show-todo-title::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/box-chat/footer_base.png") no-repeat center top;
+  background-size: 100% auto;
+  transform: translateY(-60%);
+}
+.todo-footer-title .show-todo-title::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/header_base.png") no-repeat center;
+  background-size: 100%;
+  transform: translateY(60%);
+}
+.todo-footer-title .show-todo-title .show-title {
+  position: relative;
+  font-family: "Persona5";
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  text-shadow: 1px 1px #000;
+  z-index: 2;
+  cursor: pointer;
+}
+.todo-footer-title .show-todo-title .show-title::before {
+  opacity: 0;
+  position: absolute;
+  content: "";
+  background-color: #aa1f24;
+  left: -8px;
+  width: 105%;
+  padding: 20px 10px;
+  transform: skewX(-20deg);
+  z-index: -1;
+  transition: opacity 0.4s ease;
+}
+.todo-footer-title .show-todo-title .show-title:hover::before {
+  opacity: 1;
+  animation: hov 0.4s linear forwards;
+}
+
+@media screen and (max-width: 750px) {
+  .box-todo-list {
+    display: none;
+  }
+  .box-img-list {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 130px 0;
+  }
+  .box-img-list .borders-shadow,
+  .box-img-list .borders,
+  .box-img-list .outlines {
+    position: absolute;
+  }
+  .box-img-list .borders-shadow {
+    fill: rgba(0, 0, 0, 0.2);
+  }
+  .box-img-list .borders {
+    fill: #000;
+  }
+  .box-img-list .outlines {
+    fill: #fff;
+    bottom: -26px;
+    z-index: 2;
+  }
+  .todo {
+    position: relative;
+    display: flex;
+    width: 270px;
+    height: 320px;
+  }
+  .todo .profil {
+    position: relative;
+    display: block;
+    height: 55px;
+  }
+  .todo .profil .borders-shadow {
+    position: absolute;
+    top: 115px;
+    left: 31px;
+    fill: #7f171b;
+    border: rgba(0, 0, 0, 0.75);
+  }
+  .todo .profil .borders {
+    position: absolute;
+    top: 107px;
+    left: 36px;
+    fill: black;
+  }
+  .todo .profil .outlines {
+    position: absolute;
+    top: 115px;
+    left: 38px;
+    fill: white;
+  }
+  .todo .profil .text-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0 0 0;
+  }
+  .todo .profil .text-container .text-box {
+    width: 100%;
+    height: 130px;
+  }
+  .todo .profil .text-container .conf_cmd {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 60px;
+  }
+  .todo .profil .text-container .text-input1 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: absolute;
+    width: 20%;
+    top: 100px;
+    left: 30px;
+    transform: rotate(-21deg) skew(10deg);
+    outline: none;
+    background: transparent;
+  }
+  .todo .profil .text-container .text-input1::-moz-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    letter-spacing: 1.5px;
+  }
+  .todo .profil .text-container .text-input1::placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    letter-spacing: 1.5px;
+  }
+  .todo .profil .text-container .text-input2 {
+    position: absolute;
+    width: 60%;
+    bottom: 35px;
+    height: 40px;
+    padding-bottom: 10px;
+    left: 50px;
+    outline: none;
+    resize: none;
+    scrollbar-width: none;
+    background: transparent;
+    line-height: 1;
+    font-size: 20px;
+    color: white;
+  }
+  .todo .profil .text-container .text-input2::-moz-placeholder {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+  }
+  .todo .profil .text-container .text-input2::placeholder {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+  }
+  .todo .profil .text-container .wrap-btn {
+    position: relative;
+    display: flex;
+    background-color: #000;
+    justify-content: flex-end;
+  }
+  .todo .profil .text-container .wrap-btn .submit {
+    position: absolute;
+    right: 8px;
+    bottom: 45px;
+    transform: rotate(-53deg);
+    color: #000;
+    font-size: 12px;
+    padding: -1px 3px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+  }
+  .todo .profil .text-container .wrap-btn .submit:hover {
+    transition: all 0.3s ease;
+    color: #cc0000;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .todo .profil .text-container .wrap-btn .knfu-img {
+    opacity: 0;
+    position: absolute;
+    right: -10px;
+    top: -110px;
+    transition: all 0.2s ease;
+    transform: translateY(-20px) translateX(20px) rotate(180deg);
+  }
+  .todo .profil .text-container .wrap-btn:hover .knfu-img {
+    transform: translateY(0) translateX(0) rotate(0);
+    opacity: 1;
+  }
+  .todo .profil .img-imagine {
+    position: absolute;
+    top: 77px;
+    left: 54px;
+    padding: 10px;
+    display: flex;
+  }
+  .todo-footer-title .show-todo-title {
+    padding: 3% 0 3%;
+  }
+  .todo-footer-title .show-todo-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-bottom: 6%;
+    width: 100%;
+    transform: translateY(-99%);
+    background: url("../../img/box-chat/base01_top.png") center no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+  }
+  .todo-footer-title .show-todo-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 7%;
+    width: 100%;
+    transform: translateY(99%);
+    background: url("../../img/box-chat/base01_btm.png") center no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+  }
+  .todo-footer-title .show-todo-title .show-title {
+    font-size: 29px;
+  }
+}/*# sourceMappingURL=todolist.css.map */

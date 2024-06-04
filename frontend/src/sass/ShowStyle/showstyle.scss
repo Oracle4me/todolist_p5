@@ -1,0 +1,106 @@
+.bg-show {
+  padding-top: 10px;
+}
+
+.box-wrapper-show {
+  background-color: black;
+  width: 100%;
+}
+
+@mixin title-cs() {
+  position: absolute;
+  transform: rotate(-10deg) skew(2.8deg);
+  width: max-content;
+  height: max-content;
+  overflow: hidden;
+  z-index: 1;
+  bottom: 0;
+  background-color: white;
+  cursor: pointer;
+
+  .cs-title {
+    position: relative;
+    font-family: "Source Sans Pro";
+    background-color: black;
+    color: white;
+    margin: 6px;
+    padding: 5px;
+    transform: skew(-2deg);
+
+    .s-title-txt {
+      font-family: "Source Sans Pro";
+      font-weight: 600;
+      font-size: 16px;
+      color: white;
+    }
+  }
+  &::before {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid red;
+    transition: shakeDown 0.3s ease;
+    // background-color: #000;
+  }
+
+  &:hover::before,
+  .banner::before {
+    opacity: 1;
+    animation: shakeDown 0.3s ease infinite;
+  }
+}
+
+.show-title1 {
+  @include title-cs();
+  top: -8px;
+}
+
+.show-title2 {
+  @include title-cs();
+  top: 1px;
+  right: 0;
+}
+
+.show-title3 {
+  @include title-cs();
+  left: 0;
+}
+.show-title4 {
+  @include title-cs();
+  right: 0;
+}
+
+.pin {
+  position: absolute;
+  z-index: 99;
+  top: -25px;
+  right: -15px;
+  transition: transform 0.4s ease, opacity 0.5s ease;
+}
+
+.pin.show {
+  opacity: 1;
+  transform: translateY(0) translateX(0) rotate(0) scale(1);
+}
+.pin.hide {
+  opacity: 0;
+  transform: scale(0);
+  transform: translateY(-20px) translateX(20px) rotate(360deg) scale(0);
+}
+
+.desc-cs {
+  font-family: "Persona5";
+  font-size: 19px;
+  color: white;
+  text-shadow: 1px 2px #000;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  z-index: 99;
+  transform: skew(-2deg) rotate(-1deg);
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}

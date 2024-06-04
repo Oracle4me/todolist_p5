@@ -1,0 +1,219 @@
+.bg-show {
+  padding-top: 10px;
+}
+
+.box-wrapper-show {
+  background-color: black;
+  width: 100%;
+}
+
+.show-title1 {
+  position: absolute;
+  transform: rotate(-10deg) skew(2.8deg);
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: hidden;
+  z-index: 1;
+  bottom: 0;
+  background-color: white;
+  cursor: pointer;
+  top: -8px;
+}
+.show-title1 .cs-title {
+  position: relative;
+  font-family: "Source Sans Pro";
+  background-color: black;
+  color: white;
+  margin: 6px;
+  padding: 5px;
+  transform: skew(-2deg);
+}
+.show-title1 .cs-title .s-title-txt {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+.show-title1::before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid red;
+  transition: shakeDown 0.3s ease;
+}
+.show-title1:hover::before,
+.show-title1 .banner::before {
+  opacity: 1;
+  animation: shakeDown 0.3s ease infinite;
+}
+
+.show-title2 {
+  position: absolute;
+  transform: rotate(-10deg) skew(2.8deg);
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: hidden;
+  z-index: 1;
+  bottom: 0;
+  background-color: white;
+  cursor: pointer;
+  top: 1px;
+  right: 0;
+}
+.show-title2 .cs-title {
+  position: relative;
+  font-family: "Source Sans Pro";
+  background-color: black;
+  color: white;
+  margin: 6px;
+  padding: 5px;
+  transform: skew(-2deg);
+}
+.show-title2 .cs-title .s-title-txt {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+.show-title2::before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid red;
+  transition: shakeDown 0.3s ease;
+}
+.show-title2:hover::before,
+.show-title2 .banner::before {
+  opacity: 1;
+  animation: shakeDown 0.3s ease infinite;
+}
+
+.show-title3 {
+  position: absolute;
+  transform: rotate(-10deg) skew(2.8deg);
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: hidden;
+  z-index: 1;
+  bottom: 0;
+  background-color: white;
+  cursor: pointer;
+  left: 0;
+}
+.show-title3 .cs-title {
+  position: relative;
+  font-family: "Source Sans Pro";
+  background-color: black;
+  color: white;
+  margin: 6px;
+  padding: 5px;
+  transform: skew(-2deg);
+}
+.show-title3 .cs-title .s-title-txt {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+.show-title3::before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid red;
+  transition: shakeDown 0.3s ease;
+}
+.show-title3:hover::before,
+.show-title3 .banner::before {
+  opacity: 1;
+  animation: shakeDown 0.3s ease infinite;
+}
+
+.show-title4 {
+  position: absolute;
+  transform: rotate(-10deg) skew(2.8deg);
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: hidden;
+  z-index: 1;
+  bottom: 0;
+  background-color: white;
+  cursor: pointer;
+  right: 0;
+}
+.show-title4 .cs-title {
+  position: relative;
+  font-family: "Source Sans Pro";
+  background-color: black;
+  color: white;
+  margin: 6px;
+  padding: 5px;
+  transform: skew(-2deg);
+}
+.show-title4 .cs-title .s-title-txt {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+.show-title4::before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid red;
+  transition: shakeDown 0.3s ease;
+}
+.show-title4:hover::before,
+.show-title4 .banner::before {
+  opacity: 1;
+  animation: shakeDown 0.3s ease infinite;
+}
+
+.pin {
+  position: absolute;
+  z-index: 99;
+  top: -25px;
+  right: -15px;
+  transition: transform 0.4s ease, opacity 0.5s ease;
+}
+
+.pin.show {
+  opacity: 1;
+  transform: translateY(0) translateX(0) rotate(0) scale(1);
+}
+
+.pin.hide {
+  opacity: 0;
+  transform: scale(0);
+  transform: translateY(-20px) translateX(20px) rotate(360deg) scale(0);
+}
+
+.desc-cs {
+  font-family: "Persona5";
+  font-size: 19px;
+  color: white;
+  text-shadow: 1px 2px #000;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  z-index: 99;
+  transform: skew(-2deg) rotate(-1deg);
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}/*# sourceMappingURL=showstyle.css.map */

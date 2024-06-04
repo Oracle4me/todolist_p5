@@ -1,0 +1,149 @@
+.footer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0 0 5% 0;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  z-index: 101;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../../img/box-chat/footer_base.png") no-repeat center
+      bottom;
+  }
+
+  .navbar-footer {
+    width: 100%;
+    height: 100%;
+
+    ul {
+      display: flex;
+
+      li {
+        margin: 0 20px;
+
+        .footer-cs-nav {
+          position: relative;
+          font-family: "Persona5";
+          font-size: 25px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          color: #fff;
+
+          &::before {
+            opacity: 0;
+            content: "";
+            position: absolute;
+            background-color: #cc0000;
+            left: -9%;
+            top: -8%;
+            right: 0;
+            width: 118%;
+            height: 117%;
+            z-index: -1;
+          }
+          &:hover::before {
+            display: block;
+            opacity: 1;
+            transform: skew(-12deg);
+            animation: hov 0.4s linear forwards;
+          }
+
+          &:hover .border-outline1 {
+            color: #ffffff;
+            border: 1px solid #fff;
+            transition: opacity 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+
+  .share {
+    margin-top: 20px;
+    display: flex;
+    color: #ffffff;
+    position: relative;
+
+    li {
+      display: inline-block;
+      margin: 0 5px 0 0;
+      letter-spacing: normal;
+      z-index: 1;
+
+      a {
+        position: relative;
+        display: block;
+        padding: 3px 3px;
+        background-color: #fff;
+        width: 32px;
+        color: #000;
+
+        &::before {
+          opacity: 0;
+          content: "";
+          position: absolute;
+          background-color: #cc0000;
+          left: -9%;
+          top: -8%;
+          right: 0;
+          width: 118%;
+          height: 117%;
+          z-index: -1;
+        }
+        &:hover::before {
+          display: block;
+          opacity: 1;
+          transform: skew(-12deg);
+          animation: hov 0.4s linear forwards;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 20px;
+    p {
+      font-weight: 100;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer {
+    display: flex;
+  }
+}
+
+@keyframes hov {
+  0% {
+    transform: scale(0.2, 1) skew(2deg, 4deg);
+  }
+  20% {
+    transform: scale(1, 1) skew(1deg, 2deg);
+  }
+  40% {
+    transform: scale(1, 1.06) skew(-1deg, 2deg);
+  }
+  65% {
+    transform: scale(1.03, 1) skew(2deg, 8deg);
+  }
+  90% {
+    transform: scale(1, 1.1) skew(5deg, -1deg);
+  }
+  95% {
+    transform: scale(1.04, 1.03) skew(-5deg, 1deg);
+  }
+  100% {
+    transform: scale(1, 1) skew(-7deg, 1deg);
+  }
+}

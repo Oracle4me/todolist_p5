@@ -1,0 +1,12 @@
+<svg className="borders-shadow">
+  <polygon points="6,10 80,20 110,70 20,92" />
+</svg>
+<svg className="borders">
+  <polygon points="0,10 80,20 110,75 20,95" />
+</svg>
+<svg className="outlines">
+  <polygon points="10,10 80,13 110,63 25,80" />
+</svg>
+<svg className="outlines">
+  <polygon points="10,10 80,13 110,63 25,80" />
+</svg>
